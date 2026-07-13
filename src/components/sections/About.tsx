@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import emilyPortrait from '../../assets/about/emily-portrait.png';
 
 const containerVariants = {
   hidden: {},
@@ -62,7 +63,7 @@ export default function About() {
             <div className="relative overflow-hidden border border-brushed-gold/30 group">
               <div className="aspect-[3/4] overflow-hidden">
                 <img
-                  src="/images/about/emily-portrait.png"
+                  src={emilyPortrait}
                   alt="Emily — Artist and founder of MLE Made luxury cosmetic tattoo studio"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="lazy"
