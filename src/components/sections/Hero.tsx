@@ -111,8 +111,8 @@ export default function Hero() {
         poster="/images/hero-poster.jpg"
         className="absolute inset-0 w-full h-full object-cover z-[1]"
       >
-        <source src="/videos/hero-background.mp4" type="video/mp4" />
-        <source src="/videos/hero-background.mov" type="video/quicktime" />
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
+        <source src="/videos/hero-video.mov" type="video/quicktime" />
       </video>
 
       {/* Semi-transparent dark overlay between video and text (50-65% opacity, slightly darker at top and bottom) */}
