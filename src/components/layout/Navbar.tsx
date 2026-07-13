@@ -56,9 +56,14 @@ export default function Navbar() {
             <a
               href="#home"
               onClick={(e) => handleNavClick(e, '#home')}
-              className="relative z-10"
+              className="relative z-10 flex items-center gap-3"
             >
-              <span className="font-serif text-2xl lg:text-3xl text-warm-ivory tracking-wide">
+              <img
+                src="/images/logo.png"
+                alt="MLE Made Logo"
+                className="h-8 lg:h-10 w-auto object-contain"
+              />
+              <span className="font-serif text-2xl lg:text-3xl text-warm-ivory tracking-wide whitespace-nowrap">
                 MLE <span className="text-brushed-gold">Made</span>
               </span>
             </a>
