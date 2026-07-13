@@ -57,7 +57,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Gradient Background */}
+      {/* Animated Gradient Background Fallback */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -76,9 +76,9 @@ export default function Hero() {
         }}
       />
 
-      {/* Secondary Gradient Layer — adds depth */}
+      {/* Secondary Gradient Layer Fallback — adds depth */}
       <div
-        className="absolute inset-0 z-[1] opacity-60"
+        className="absolute inset-0 z-0 opacity-60"
         style={{
           background: `
             radial-gradient(
@@ -102,9 +102,30 @@ export default function Hero() {
         }}
       />
 
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/images/hero-poster.jpg"
+        className="absolute inset-0 w-full h-full object-cover z-[1]"
+      >
+        <source src="/videos/hero-background.mp4" type="video/mp4" />
+        <source src="/videos/hero-background.mov" type="video/quicktime" />
+      </video>
+
+      {/* Semi-transparent dark overlay between video and text (50-65% opacity, slightly darker at top and bottom) */}
+      <div
+        className="absolute inset-0 z-[2]"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(26, 26, 26, 0.65) 0%, rgba(26, 26, 26, 0.5) 50%, rgba(26, 26, 26, 0.65) 100%)'
+        }}
+      />
+
       {/* Film Grain Texture Overlay */}
       <div
-        className="absolute inset-0 z-[2] opacity-[0.035] pointer-events-none"
+        className="absolute inset-0 z-[3] opacity-[0.035] pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           backgroundRepeat: 'repeat',
@@ -113,11 +134,11 @@ export default function Hero() {
       />
 
       {/* Bottom Gradient Overlay for text legibility */}
-      <div className="absolute inset-0 z-[3] bg-gradient-to-t from-warm-black via-warm-black/40 to-transparent" />
+      <div className="absolute inset-0 z-[4] bg-gradient-to-t from-warm-black via-warm-black/40 to-transparent" />
 
       {/* Vignette effect */}
       <div
-        className="absolute inset-0 z-[3] pointer-events-none"
+        className="absolute inset-0 z-[4] pointer-events-none"
         style={{
           background:
             'radial-gradient(ellipse at center, transparent 40%, rgba(26, 26, 26, 0.6) 100%)',
