@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import emilyPortrait from '../../assets/about/emily-portrait.png';
+import meetEmilyHeading from '../../assets/meet-emily-heading.png';
 
 const containerVariants = {
   hidden: {},
@@ -85,27 +86,17 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
           >
-            {/* Label */}
-            <motion.span
-              variants={itemVariants}
-              className="block text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans mb-6"
-            >
-              The Artist
-            </motion.span>
-
-            {/* Gold decorative line */}
+            {/* Heading Image */}
             <motion.div
               variants={itemVariants}
-              className="w-16 h-px bg-brushed-gold mb-8"
-            />
-
-            {/* Heading */}
-            <motion.h2
-              variants={itemVariants}
-              className="text-4xl md:text-5xl font-serif text-warm-ivory mb-8 tracking-tight leading-tight"
+              className="mb-8 max-w-[340px] md:max-w-[380px] w-full"
             >
-              Meet Emily
-            </motion.h2>
+              <img
+                src={meetEmilyHeading}
+                alt="The Artist — Meet Emily"
+                className="w-full h-auto object-contain"
+              />
+            </motion.div>
 
             {/* Body Paragraphs */}
             <motion.div
