@@ -165,11 +165,13 @@ export default function Hero() {
           {/* Headline */}
           <motion.h1
             variants={itemVariants}
-            className="text-6xl md:text-7xl lg:text-8xl font-serif tracking-tight text-warm-ivory leading-[0.95] mb-8"
+            className="mb-10 max-w-xl md:max-w-2xl lg:max-w-3xl px-4 flex justify-center"
           >
-            Where Beauty
-            <br />
-            <span className="italic">Becomes Art</span>
+            <img
+              src="/images/hero-headline.png"
+              alt="There is beauty in simplicity"
+              className="w-full h-auto object-contain"
+            />
           </motion.h1>
 
           {/* Subheadline */}
