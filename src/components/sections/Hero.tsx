@@ -147,7 +147,7 @@ export default function Hero() {
 
       {/* Hero Content */}
       <motion.div
-        className="relative z-10 text-center px-6 md:px-12 max-w-5xl mx-auto"
+        className="relative z-10 text-center px-6 md:px-12 max-w-7xl mx-auto"
         style={{ y: textY, opacity: textOpacity }}
       >
         <motion.div
@@ -159,13 +159,13 @@ export default function Hero() {
           {/* Decorative Gold Line */}
           <motion.div
             variants={itemVariants}
-            className="w-12 h-px bg-brushed-gold/60 mb-8"
+            className="w-12 h-px bg-brushed-gold/60 mb-12 md:mb-16"
           />
 
           {/* Headline */}
           <motion.h1
             variants={itemVariants}
-            className="mb-10 max-w-xl md:max-w-2xl lg:max-w-3xl px-4 flex justify-center"
+            className="mb-12 md:mb-16 max-w-xs sm:max-w-lg md:max-w-4xl lg:max-w-[1250px] px-4 flex justify-center"
           >
             <img
               src="/images/hero-headline.png"
