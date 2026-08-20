@@ -13,6 +13,7 @@
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-script: 'Pinyon Script', cursive;
 
   /* Custom Animations */
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
