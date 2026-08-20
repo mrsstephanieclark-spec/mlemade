@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { navVariant, mobileMenuVariant, staggerContainer, slideUpVariant } from '../../utils/animations';
+import logoAsset from '../../assets/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -59,7 +60,7 @@ export default function Navbar() {
               className="relative z-10 flex items-center gap-3"
             >
               <img
-                src="/images/logo.png"
+                src={logoAsset}
                 alt="MLE Made Logo"
                 className="h-8 lg:h-10 w-auto object-contain"
               />

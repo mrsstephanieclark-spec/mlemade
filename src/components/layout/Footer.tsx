@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { staggerContainer, slideUpVariant } from '../../utils/animations';
+import logoAsset from '../../assets/logo.png';
 
 function InstagramIcon() {
   return (
@@ -75,8 +76,17 @@ export default function Footer() {
         >
           {/* Brand */}
           <motion.div variants={slideUpVariant}>
-            <a href="#home" onClick={(e) => handleNavClick(e, '#home')}>
-              <span className="font-serif text-2xl text-warm-ivory tracking-wide">
+            <a
+              href="#home"
+              onClick={(e) => handleNavClick(e, '#home')}
+              className="flex items-center gap-3"
+            >
+              <img
+                src={logoAsset}
+                alt="MLE Made Logo"
+                className="h-8 w-auto object-contain"
+              />
+              <span className="font-serif text-2xl text-warm-ivory tracking-wide whitespace-nowrap">
                 MLE <span className="text-brushed-gold">Made</span>
               </span>
             </a>
