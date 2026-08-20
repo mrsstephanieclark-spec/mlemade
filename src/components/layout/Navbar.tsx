@@ -75,7 +75,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-warm-ivory/70 hover:text-brushed-gold text-xs uppercase tracking-[0.2em] font-sans transition-colors duration-300"
+                  className="text-warm-ivory/70 hover:text-soft-sage text-xs uppercase tracking-[0.2em] font-sans transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -92,7 +92,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden relative z-10 text-warm-ivory hover:text-brushed-gold transition-colors"
+              className="lg:hidden relative z-10 text-warm-ivory hover:text-soft-sage transition-colors"
               aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -123,7 +123,7 @@ export default function Navbar() {
                   variants={slideUpVariant}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-warm-ivory text-2xl font-serif hover:text-brushed-gold transition-colors duration-300"
+                  className="text-warm-ivory text-2xl font-serif hover:text-soft-sage transition-colors duration-300"
                 >
                   {link.label}
                 </motion.a>

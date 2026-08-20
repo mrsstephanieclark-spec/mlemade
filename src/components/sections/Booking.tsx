@@ -98,7 +98,7 @@ export default function Booking() {
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
         >
-          <div className="w-24 h-px bg-brushed-gold mx-auto mb-16" />
+          <div className="w-24 h-px bg-soft-sage mx-auto mb-16" />
         </motion.div>
 
         <motion.div
@@ -143,7 +143,7 @@ export default function Booking() {
             </a>
             <a
               href="#contact"
-              className="inline-block border border-warm-ivory/30 text-warm-ivory hover:bg-warm-ivory/10 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans transition-colors duration-300"
+              className="inline-block border border-soft-sage/40 text-warm-ivory hover:bg-soft-sage/10 hover:border-soft-sage/80 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans transition-colors duration-300"
             >
               Ask a Question
             </a>
@@ -157,7 +157,7 @@ export default function Booking() {
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
         >
-          <div className="w-24 h-px bg-brushed-gold mx-auto mt-16" />
+          <div className="w-24 h-px bg-soft-sage mx-auto mt-16" />
         </motion.div>
       </div>
     </section>

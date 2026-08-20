@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import heroHeadline from '../../assets/hero-headline.png';
 
 const containerVariants = {
   hidden: {},
@@ -159,18 +160,18 @@ export default function Hero() {
           {/* Decorative Gold Line */}
           <motion.div
             variants={itemVariants}
-            className="w-12 h-px bg-brushed-gold/60 mb-12 md:mb-16"
+            className="w-12 h-px bg-brushed-gold/60 mb-14 md:mb-20"
           />
 
           {/* Headline */}
           <motion.h1
             variants={itemVariants}
-            className="mb-12 md:mb-16 max-w-xs sm:max-w-lg md:max-w-4xl lg:max-w-[1250px] px-4 flex justify-center"
+            className="mb-14 md:mb-20 px-4 flex justify-center w-full"
           >
             <img
-              src="/images/hero-headline.png"
+              src={heroHeadline}
               alt="There is beauty in simplicity"
-              className="w-full h-auto object-contain"
+              className="w-[90vw] max-w-[900px] h-auto object-contain"
             />
           </motion.h1>
 
@@ -210,7 +211,7 @@ export default function Hero() {
             >
               <motion.button
                 type="button"
-                className="border border-warm-ivory/40 text-warm-ivory px-8 py-4 tracking-widest uppercase text-sm font-sans font-medium rounded-none bg-transparent cursor-pointer transition-all duration-300 hover:bg-warm-ivory/10 hover:border-warm-ivory/60"
+                className="border border-soft-sage/40 text-warm-ivory px-8 py-4 tracking-widest uppercase text-sm font-sans font-medium rounded-none bg-transparent cursor-pointer transition-all duration-300 hover:bg-soft-sage/10 hover:border-soft-sage/80"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

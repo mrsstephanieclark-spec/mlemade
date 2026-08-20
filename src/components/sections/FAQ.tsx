@@ -106,7 +106,7 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
     <div className="border-b border-warm-ivory/10">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center py-6 text-left text-warm-ivory font-sans text-base md:text-lg hover:text-brushed-gold transition-colors duration-300 cursor-pointer group"
+        className="w-full flex justify-between items-center py-6 text-left text-warm-ivory font-sans text-base md:text-lg hover:text-soft-sage transition-colors duration-300 cursor-pointer group"
         aria-expanded={isOpen}
       >
         <span className="pr-8">{item.question}</span>
@@ -115,7 +115,7 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="flex-shrink-0 text-warm-ivory/40 group-hover:text-brushed-gold transition-colors duration-300"
+          className="flex-shrink-0 text-warm-ivory/40 group-hover:text-soft-sage transition-colors duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -327,7 +327,7 @@ export default function Services() {
 
           <motion.div
             variants={headerItemVariants}
-            className="w-16 h-px bg-brushed-gold mx-auto mt-6"
+            className="w-16 h-px bg-soft-sage mx-auto mt-6"
           />
         </motion.div>
 
@@ -343,13 +343,14 @@ export default function Services() {
               className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 border-t border-warm-ivory/10 pt-10"
             >
               {/* Category Sticky/Fixed Sidebar Left */}
-              <div className="lg:col-span-4 lg:sticky lg:top-28 h-fit">
-                <span className="text-brushed-gold/40 text-xs font-sans tracking-[0.25em] uppercase block mb-2">
+              <div className="lg:col-span-4 lg:sticky lg:top-28 h-fit pb-4 lg:pb-0">
+                <span className="text-soft-sage/70 text-xs font-sans tracking-[0.25em] uppercase block mb-2">
                   Category {String(catIndex + 1).padStart(2, '0')}
                 </span>
                 <h3 className="text-2xl md:text-3xl font-serif text-warm-ivory tracking-wide">
                   {category.title}
                 </h3>
+                <div className="w-12 h-[2px] bg-soft-sage/40 mt-3" />
               </div>
 
               {/* Service Items Accordion List Right */}

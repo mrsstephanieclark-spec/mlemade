@@ -91,7 +91,7 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mb-6">
             Contact
           </h2>
-          <div className="w-16 h-px bg-brushed-gold mx-auto" />
+          <div className="w-16 h-px bg-soft-sage mx-auto" />
         </motion.div>
 
         {/* Two-Column Layout */}
@@ -145,7 +145,7 @@ export default function Contact() {
               <div className="space-y-3">
                 <a
                   href="mailto:hello@mlemade.com"
-                  className="text-brushed-gold hover:underline font-sans flex items-center gap-3 transition-colors duration-300"
+                  className="text-brushed-gold hover:text-soft-sage hover:underline font-sans flex items-center gap-3 transition-colors duration-300"
                 >
                   <Mail className="w-4 h-4" />
                   hello@mlemade.com
@@ -153,7 +153,7 @@ export default function Contact() {
 
                 <a
                   href="tel:+15551234567"
-                  className="text-warm-ivory/60 hover:text-warm-ivory font-sans flex items-center gap-3 transition-colors duration-300"
+                  className="text-warm-ivory/60 hover:text-soft-sage font-sans flex items-center gap-3 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4" />
                   (555) 123-4567
@@ -166,7 +166,7 @@ export default function Contact() {
                   href="https://instagram.com/mle_made"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-warm-ivory/40 hover:text-brushed-gold transition-colors duration-300"
+                  className="text-warm-ivory/40 hover:text-soft-sage transition-colors duration-300"
                   aria-label="Follow on Instagram"
                 >
                   <InstagramIcon className="w-5 h-5" />
@@ -175,7 +175,7 @@ export default function Contact() {
                   href="https://tiktok.com/@mle_made"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-warm-ivory/40 hover:text-brushed-gold transition-colors duration-300"
+                  className="text-warm-ivory/40 hover:text-soft-sage transition-colors duration-300"
                   aria-label="Follow on TikTok"
                 >
                   <TikTokIcon className="w-5 h-5" />

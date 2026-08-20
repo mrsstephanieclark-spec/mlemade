@@ -61,7 +61,7 @@ export default function WhyChoose() {
             What sets us apart is our unwavering commitment to artistry, safety,
             and an elevated client experience.
           </p>
-          <div className="gold-line-center mt-6" />
+          <div className="w-16 h-px bg-brushed-gold mx-auto mt-6" />
         </motion.div>
 
         {/* Features Grid */}
@@ -79,12 +79,12 @@ export default function WhyChoose() {
               className="group text-center p-8"
             >
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 border border-brushed-gold/30 text-brushed-gold group-hover:bg-brushed-gold/10 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 border border-soft-sage/30 text-soft-sage group-hover:bg-soft-sage/10 transition-all duration-500">
                 <feature.icon size={28} strokeWidth={1.5} />
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-serif text-warm-ivory mb-3 group-hover:text-brushed-gold transition-colors duration-300">
+              <h3 className="text-xl font-serif text-warm-ivory mb-3 group-hover:text-soft-sage transition-colors duration-300">
                 {feature.title}
               </h3>
 

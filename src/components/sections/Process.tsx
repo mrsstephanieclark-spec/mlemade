@@ -85,8 +85,8 @@ function StepNode({ step }: StepNodeProps) {
   return (
     <div className="flex flex-col items-center text-center">
       {/* Circle */}
-      <div className="w-14 h-14 rounded-full border-2 border-brushed-gold flex items-center justify-center flex-shrink-0">
-        <span className="text-brushed-gold font-serif text-lg">{step.number}</span>
+      <div className="w-14 h-14 rounded-full border-2 border-soft-sage flex items-center justify-center flex-shrink-0">
+        <span className="text-soft-sage font-serif text-lg">{step.number}</span>
       </div>
 
       {/* Title */}
@@ -121,7 +121,7 @@ export default function Process() {
           <p className="text-warm-ivory/50 mt-4 font-sans text-base md:text-lg max-w-xl mx-auto">
             Every appointment follows our refined five-step process
           </p>
-          <div className="w-16 h-px bg-brushed-gold mx-auto mt-6 mb-16" />
+          <div className="w-16 h-px bg-soft-sage mx-auto mt-6 mb-16" />
         </motion.div>
 
         {/* Desktop: Horizontal Timeline */}
@@ -147,7 +147,7 @@ export default function Process() {
               {index < steps.length - 1 && (
                 <motion.div
                   variants={lineVariants}
-                  className="h-px bg-brushed-gold/30 flex-1 mt-7 origin-left min-w-[20px]"
+                  className="h-px bg-soft-sage/30 flex-1 mt-7 origin-left min-w-[20px]"
                 />
               )}
             </motion.div>
@@ -171,7 +171,7 @@ export default function Process() {
               {index < steps.length - 1 && (
                 <motion.div
                   variants={lineVerticalVariants}
-                  className="w-px h-12 bg-brushed-gold/30 my-4 origin-top"
+                  className="w-px h-12 bg-soft-sage/30 my-4 origin-top"
                 />
               )}
             </motion.div>

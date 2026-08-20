@@ -51,7 +51,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-warm-black border-t border-warm-ivory/10">
+    <footer className="bg-warm-black border-t border-soft-sage/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <motion.div
           variants={staggerContainer}
@@ -79,7 +79,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="text-warm-ivory/40 hover:text-brushed-gold transition-colors duration-300"
+                  className="text-warm-ivory/40 hover:text-soft-sage transition-colors duration-300"
                 >
                   <social.icon />
                 </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-warm-ivory/50 hover:text-warm-ivory text-sm font-sans transition-colors duration-300"
+                    className="text-warm-ivory/50 hover:text-soft-sage text-sm font-sans transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -120,13 +120,13 @@ export default function Footer() {
               </p>
               <a
                 href="mailto:hello@mlemade.com"
-                className="block text-brushed-gold hover:underline"
+                className="block text-brushed-gold hover:text-soft-sage hover:underline transition-colors"
               >
                 hello@mlemade.com
               </a>
               <a
                 href="tel:+15551234567"
-                className="block text-warm-ivory/50 hover:text-warm-ivory transition-colors"
+                className="block text-warm-ivory/50 hover:text-soft-sage transition-colors"
               >
                 (555) 123-4567
               </a>
@@ -135,7 +135,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-warm-ivory/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-16 pt-8 border-t border-soft-sage/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-warm-ivory/30 text-xs font-sans tracking-wide">
             &copy; {new Date().getFullYear()} MLE Made. All rights reserved.
           </p>
