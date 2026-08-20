@@ -166,6 +166,18 @@ export default function Footer() {
             Precision Artistry &bull; Timeless Beauty
           </p>
         </div>
+
+        {/* Credit Line */}
+        <div className="mt-6 text-center">
+          <a
+            href="https://10hatsbranding.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-warm-ivory/20 hover:text-soft-sage transition-colors duration-300 text-[10px] uppercase tracking-[0.2em] font-sans font-light"
+          >
+            Site by 10 Hats Branding
+          </a>
+        </div>
       </div>
     </footer>
   );
