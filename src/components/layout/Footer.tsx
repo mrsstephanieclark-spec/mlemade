@@ -30,9 +30,9 @@ function FacebookIcon() {
 
 const footerLinks = [
   { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
-  { label: 'About', href: '#about' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];

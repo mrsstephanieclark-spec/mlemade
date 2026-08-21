@@ -7,9 +7,9 @@ import logoAsset from '../../assets/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
-  { label: 'About', href: '#about' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Book', href: '#booking' },
   { label: 'Contact', href: '#contact' },
