@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Phone, Clock } from 'lucide-react';
 import logoAsset from '../../assets/logo.png';
+import textingHeading from '../../assets/texting-heading.png';
 
 /* ─── Animation Variants ─── */
 
@@ -167,17 +168,17 @@ export default function Contact() {
               />
             </motion.div>
 
-            {/* Headline with script text */}
-            <motion.h3 
+            {/* Headline Image */}
+            <motion.div
               variants={staggerItem}
-              className="text-2xl md:text-3xl lg:text-4xl font-serif text-warm-ivory leading-snug mb-10 max-w-md"
+              className="mb-10 max-w-[320px] md:max-w-[360px] w-full flex justify-start self-start"
             >
-              Texting is my{' '}
-              <span className="font-script text-brushed-gold text-4xl md:text-5xl lowercase tracking-normal inline-block transform translate-y-1">
-                best
-              </span>{' '}
-              form of communication.
-            </motion.h3>
+              <img
+                src={textingHeading}
+                alt="Texting is my best form of communication."
+                className="w-full h-auto object-contain text-left"
+              />
+            </motion.div>
 
             {/* Contact Details Block */}
             <motion.div variants={staggerItem} className="space-y-6 w-full max-w-md">
