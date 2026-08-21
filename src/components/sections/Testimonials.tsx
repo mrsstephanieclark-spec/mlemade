@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import clientLoveHeading from '../../assets/client-love-heading.png';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 /* ─── Testimonial Data ─── */
@@ -193,15 +194,15 @@ export default function Testimonials() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
-          className="text-center mb-16"
+          className="text-center mb-16 flex justify-center w-full"
         >
-          <span className="text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans block mb-4">
-            Client Love
-          </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mb-6">
-            What They Say
-          </h2>
-          <div className="w-16 h-px bg-brushed-gold mx-auto" />
+          <div className="w-full max-w-[280px] md:max-w-[320px]">
+            <img
+              src={clientLoveHeading}
+              alt="Client Love — What They Say"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </div>
         </motion.div>
 
         {/* Carousel */}
