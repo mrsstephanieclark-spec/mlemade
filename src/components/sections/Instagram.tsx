@@ -84,22 +84,12 @@ export default function Instagram() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
-          className="text-center mb-12 flex flex-col items-center"
+          className="text-center mb-16 md:mb-20 flex flex-col items-center"
         >
-          <div className="w-full max-w-[140px] md:max-w-[170px] mb-4">
+          <div className="w-[90vw] md:w-[510px] max-w-full">
             <img
               src={followAlongLabel}
               alt="Follow Along"
-              className="w-full h-auto object-contain mx-auto"
-            />
-          </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mb-2">
-            @mle_made
-          </h2>
-          <div className="w-full max-w-[220px] md:max-w-[260px] mt-4">
-            <img
-              src={followInstagramSubtext}
-              alt="Follow our journey on Instagram"
               className="w-full h-auto object-contain mx-auto"
             />
           </div>
