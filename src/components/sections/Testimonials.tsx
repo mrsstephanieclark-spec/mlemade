@@ -194,9 +194,9 @@ export default function Testimonials() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
-          className="text-center mb-16 flex justify-center w-full"
+          className="text-center mb-20 md:mb-24 flex justify-center w-full"
         >
-          <div className="w-full max-w-[280px] md:max-w-[320px]">
+          <div className="w-[90vw] md:w-[640px] max-w-full">
             <img
               src={clientLoveHeading}
               alt="Client Love — What They Say"
