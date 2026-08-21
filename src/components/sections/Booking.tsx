@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import beginYourJourneyHeading from '../../assets/begin-your-journey-heading.png';
 
 /* ─── Animation Variants ─── */
 
@@ -104,19 +105,17 @@ export default function Booking() {
           viewport={{ once: true, margin: '-100px' }}
           variants={staggerContainer}
         >
-          <motion.span
+          {/* Heading Image */}
+          <motion.div
             variants={staggerItem}
-            className="text-warm-black/60 uppercase tracking-[0.3em] text-xs font-sans block mb-6 font-semibold"
+            className="w-full max-w-[340px] md:max-w-[400px] mx-auto mb-8 flex justify-center"
           >
-            Begin Your Journey
-          </motion.span>
-
-          <motion.h2
-            variants={staggerItem}
-            className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-black mb-6 tracking-tight"
-          >
-            Ready When You Are.
-          </motion.h2>
+            <img
+              src={beginYourJourneyHeading}
+              alt="Begin Your Journey — Ready When You Are."
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </motion.div>
 
           <motion.p
             variants={staggerItem}
