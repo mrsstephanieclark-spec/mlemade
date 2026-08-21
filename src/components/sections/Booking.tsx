@@ -62,43 +62,40 @@ export default function Booking() {
   return (
     <section
       id="booking"
-      className="py-32 md:py-40 lg:py-48 relative overflow-hidden bg-charcoal"
+      className="py-32 md:py-40 lg:py-48 relative overflow-hidden bg-signature-sage"
     >
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-warm-black/20 to-charcoal pointer-events-none" />
-
-      {/* Floating decorative shapes — very subtle, opacity 5–10% */}
+      {/* Floating decorative shapes — very subtle, opacity 1-4% for contrast against light bg */}
       <FloatingShape
-        className="absolute top-1/4 left-[10%] w-64 h-64 rounded-full border border-brushed-gold/[0.07] opacity-100"
+        className="absolute top-1/4 left-[10%] w-64 h-64 rounded-full border border-warm-black/[0.04] opacity-100"
         delay={0}
         duration={25}
       />
       <FloatingShape
-        className="absolute bottom-1/4 right-[15%] w-48 h-48 rounded-full border border-warm-ivory/[0.05] opacity-100"
+        className="absolute bottom-1/4 right-[15%] w-48 h-48 rounded-full border border-warm-black/[0.03] opacity-100"
         delay={5}
         duration={30}
       />
       <FloatingShape
-        className="absolute top-1/3 right-[25%] w-32 h-32 rounded-full bg-brushed-gold/[0.03] opacity-100"
+        className="absolute top-1/3 right-[25%] w-32 h-32 rounded-full bg-warm-black/[0.01] opacity-100"
         delay={10}
         duration={22}
       />
       <FloatingShape
-        className="absolute bottom-1/3 left-[30%] w-40 h-40 rounded-full border border-brushed-gold/[0.05] opacity-100"
+        className="absolute bottom-1/3 left-[30%] w-40 h-40 rounded-full border border-warm-black/[0.03] opacity-100"
         delay={3}
         duration={28}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 text-center">
-        {/* Top gold line */}
+        {/* Top line */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
         >
-          <div className="w-24 h-px bg-soft-sage mx-auto mb-16" />
+          <div className="w-24 h-px bg-warm-black/20 mx-auto mb-16" />
         </motion.div>
 
         <motion.div
@@ -109,21 +106,21 @@ export default function Booking() {
         >
           <motion.span
             variants={staggerItem}
-            className="text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans block mb-6"
+            className="text-warm-black/60 uppercase tracking-[0.3em] text-xs font-sans block mb-6 font-semibold"
           >
             Begin Your Journey
           </motion.span>
 
           <motion.h2
             variants={staggerItem}
-            className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-black mb-6 tracking-tight"
           >
             Ready When You Are.
           </motion.h2>
 
           <motion.p
             variants={staggerItem}
-            className="text-warm-ivory/60 text-base md:text-lg font-sans leading-relaxed max-w-2xl mx-auto mb-10"
+            className="text-warm-black/75 text-base md:text-lg font-sans leading-relaxed max-w-2xl mx-auto mb-10"
           >
             Whether you&rsquo;re enhancing your natural beauty or creating
             meaningful fine line artwork, every appointment begins with a
@@ -137,27 +134,27 @@ export default function Booking() {
           >
             <a
               href="#"
-              className="inline-block bg-brushed-gold text-warm-black hover:bg-brushed-gold/90 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans font-medium transition-colors duration-300"
+              className="inline-block bg-warm-black text-warm-ivory hover:bg-warm-black/95 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans font-medium transition-colors duration-300 rounded-none cursor-pointer"
             >
               Book Appointment
             </a>
             <a
               href="#contact"
-              className="inline-block border border-soft-sage/40 text-warm-ivory hover:bg-soft-sage/10 hover:border-soft-sage/80 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans transition-colors duration-300"
+              className="inline-block border border-warm-black/35 text-warm-black hover:bg-warm-black/10 px-10 py-4 tracking-[0.2em] uppercase text-sm font-sans transition-colors duration-300 rounded-none cursor-pointer"
             >
               Ask a Question
             </a>
           </motion.div>
         </motion.div>
 
-        {/* Bottom gold line */}
+        {/* Bottom line */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeUp}
         >
-          <div className="w-24 h-px bg-soft-sage mx-auto mt-16" />
+          <div className="w-24 h-px bg-warm-black/20 mx-auto mt-16" />
         </motion.div>
       </div>
     </section>
