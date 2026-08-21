@@ -171,7 +171,7 @@ export default function FAQ() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-center mb-16 md:mb-24 flex flex-col items-center"
         >
-          <div className="w-[90vw] md:w-[1000px] max-w-full">
+          <div className="w-[63vw] md:w-[700px] max-w-full">
             <img
               src={faqHeading}
               alt="Common Questions"
