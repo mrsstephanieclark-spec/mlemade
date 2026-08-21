@@ -254,7 +254,7 @@ export default function Portfolio() {
       {/* Top Header Section */}
       <section className="py-24 md:py-32 bg-signature-sage relative overflow-hidden">
         {/* Decorative Tools Doodle (Left) */}
-        <div className="hidden md:block absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 w-64 lg:w-80 pointer-events-none select-none">
+        <div className="hidden md:block absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 w-[166px] lg:w-[208px] pointer-events-none select-none">
           <img
             src={doodleTools}
             alt="Decorative PMU tools sketch"
@@ -263,7 +263,7 @@ export default function Portfolio() {
         </div>
 
         {/* Decorative Compact/Palette Doodle (Right) */}
-        <div className="hidden md:block absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 w-64 lg:w-80 pointer-events-none select-none">
+        <div className="hidden md:block absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 w-[166px] lg:w-[208px] pointer-events-none select-none">
           <img
             src={doodlePalette}
             alt="Decorative makeup compact sketch"
