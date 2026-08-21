@@ -179,7 +179,7 @@ export default function FAQ() {
               className="w-full h-auto object-contain mx-auto"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mt-2">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mt-4 uppercase tracking-tight">
             Frequently Asked Questions
           </h2>
         </motion.div>
