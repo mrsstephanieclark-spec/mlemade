@@ -46,7 +46,6 @@ export default function WhyChoose() {
   return (
     <section className="py-24 md:py-32 lg:py-40 bg-warm-black">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +53,7 @@ export default function WhyChoose() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-center mb-16 lg:mb-20 flex flex-col items-center"
         >
-          <div className="w-full max-w-[340px] md:max-w-[400px] mb-8">
+          <div className="w-[90vw] max-w-[900px] mb-12 md:mb-16">
             <img
               src={whyChooseUsHeading}
               alt="Why Choose Us — The MLE Made Difference"
