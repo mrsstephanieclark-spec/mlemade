@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import beginYourJourneyHeading from '../../assets/begin-your-journey-heading.png';
+import doodleTools from '../../assets/doodle-tools.png';
 
 /* ─── Animation Variants ─── */
 
@@ -86,6 +87,15 @@ export default function Booking() {
         delay={3}
         duration={28}
       />
+
+      {/* Decorative Tools Doodle */}
+      <div className="hidden md:block absolute left-[8%] lg:left-[12%] top-1/2 -translate-y-1/2 w-28 lg:w-36 opacity-[0.18] pointer-events-none select-none">
+        <img
+          src={doodleTools}
+          alt="Decorative PMU tools sketch"
+          className="w-full h-auto object-contain"
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 text-center">

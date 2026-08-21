@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import portfolioHeading from '../../assets/portfolio-heading.png';
+import doodlePalette from '../../assets/doodle-palette.png';
 
 // —— Data ——
 
@@ -250,7 +251,16 @@ export default function Portfolio() {
   return (
     <div id="portfolio" className="overflow-hidden">
       {/* Top Header Section */}
-      <section className="py-24 md:py-32 bg-signature-sage">
+      <section className="py-24 md:py-32 bg-signature-sage relative overflow-hidden">
+        {/* Decorative Compact/Palette Doodle */}
+        <div className="hidden md:block absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 w-32 lg:w-40 opacity-[0.18] pointer-events-none select-none">
+          <img
+            src={doodlePalette}
+            alt="Decorative makeup compact sketch"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           {/* Section Header */}
           <motion.div
