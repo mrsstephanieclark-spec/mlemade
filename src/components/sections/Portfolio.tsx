@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import portfolioHeading from '../../assets/portfolio-heading.png';
 
 // —— Data ——
 
@@ -255,15 +256,15 @@ export default function Portfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-center"
+          className="text-center mb-12 flex justify-center w-full"
         >
-          <span className="text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans">
-            OUR WORK
-          </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mt-4">
-            Portfolio
-          </h2>
-          <div className="w-16 h-px bg-brushed-gold mx-auto mt-6 mb-12" />
+          <div className="w-full max-w-[280px] md:max-w-[320px]">
+            <img
+              src={portfolioHeading}
+              alt="Our Work — Portfolio"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </div>
         </motion.div>
 
         {/* Filter Tabs */}
