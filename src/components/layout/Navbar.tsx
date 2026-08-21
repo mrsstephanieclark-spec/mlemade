@@ -65,7 +65,7 @@ export default function Navbar() {
                 className="h-8 lg:h-10 w-auto object-contain"
               />
               <span className="font-serif text-2xl lg:text-3xl text-warm-ivory tracking-wide whitespace-nowrap">
-                MLE <span className="text-brushed-gold">Made</span>
+                MLE <span className="text-brushed-gold">made</span>
               </span>
             </a>
 

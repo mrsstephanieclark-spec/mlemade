@@ -87,7 +87,7 @@ export default function Footer() {
                 className="h-8 w-auto object-contain"
               />
               <span className="font-serif text-2xl text-warm-ivory tracking-wide whitespace-nowrap">
-                MLE <span className="text-brushed-gold">Made</span>
+                MLE <span className="text-brushed-gold">made</span>
               </span>
             </a>
             <p className="mt-4 text-warm-ivory/50 text-sm font-sans leading-relaxed max-w-xs">
