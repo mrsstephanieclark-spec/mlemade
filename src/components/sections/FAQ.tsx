@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import faqHeading from '../../assets/faq-heading.png';
 
 // —— Data ——
 
@@ -169,15 +170,18 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-center"
+          className="text-center mb-16 flex flex-col items-center"
         >
-          <span className="text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans">
-            COMMON QUESTIONS
-          </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mt-4">
+          <div className="w-full max-w-[280px] md:max-w-[320px] mb-4">
+            <img
+              src={faqHeading}
+              alt="Common Questions"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </div>
+          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mt-2">
             Frequently Asked Questions
           </h2>
-          <div className="w-16 h-px bg-brushed-gold mx-auto mt-6 mb-16" />
         </motion.div>
 
         {/* FAQ Accordion */}
