@@ -203,11 +203,11 @@ export default function Contact() {
                 <div>
                   <h4 className="text-xs uppercase tracking-widest text-warm-ivory/50 mb-1.5 font-sans">Studio Location</h4>
                   <address className="text-warm-ivory/70 not-italic text-sm md:text-base leading-relaxed font-sans">
-                    Southern Roots Hair Studio
+                    Hair Montage Salon
                     <br />
-                    6102 Crestwood Station
+                    2415 Lime Kiln Ln, Suite D
                     <br />
-                    Crestwood, KY 40014
+                    Louisville, KY 40222
                   </address>
                 </div>
               </div>
