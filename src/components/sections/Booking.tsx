@@ -108,7 +108,7 @@ export default function Booking() {
           {/* Heading Image */}
           <motion.div
             variants={staggerItem}
-            className="w-full max-w-[340px] md:max-w-[400px] mx-auto mb-8 flex justify-center"
+            className="w-[90vw] md:w-[800px] max-w-full mx-auto mb-12 md:mb-16 flex justify-center"
           >
             <img
               src={beginYourJourneyHeading}
