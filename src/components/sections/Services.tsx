@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ourServicesHeading from '../../assets/our-services-heading.png';
 
 interface ServiceItem {
   id: string;
@@ -302,33 +303,18 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="text-center mb-20 md:mb-28"
+          className="text-center mb-20 md:mb-28 flex justify-center w-full"
         >
-          <motion.span
-            variants={headerItemVariants}
-            className="block text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans mb-6"
-          >
-            What We Offer
-          </motion.span>
-
-          <motion.h2
-            variants={headerItemVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mb-4 tracking-tight"
-          >
-            Our Services
-          </motion.h2>
-
-          <motion.p
-            variants={headerItemVariants}
-            className="text-warm-ivory/50 font-sans text-base md:text-lg"
-          >
-            Precision artistry for every detail
-          </motion.p>
-
           <motion.div
             variants={headerItemVariants}
-            className="w-16 h-px bg-soft-sage mx-auto mt-6"
-          />
+            className="w-full max-w-[360px] md:max-w-[420px]"
+          >
+            <img
+              src={ourServicesHeading}
+              alt="What We Offer — Our Services, Precision artistry for every detail"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Services Menu Layout */}
