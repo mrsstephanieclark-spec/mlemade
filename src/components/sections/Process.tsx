@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import theExperienceHeading from '../../assets/the-experience-heading.png';
 
 // —— Data ——
 
@@ -112,16 +113,15 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-center"
+          className="text-center mb-16 flex justify-center w-full"
         >
-          <span className="text-brushed-gold uppercase tracking-[0.3em] text-xs font-sans">
-            YOUR JOURNEY
-          </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-warm-ivory mt-4">The Experience</h2>
-          <p className="text-warm-ivory/50 mt-4 font-sans text-base md:text-lg max-w-xl mx-auto">
-            Every appointment follows our refined five-step process
-          </p>
-          <div className="w-16 h-px bg-soft-sage mx-auto mt-6 mb-16" />
+          <div className="w-full max-w-[340px] md:max-w-[400px]">
+            <img
+              src={theExperienceHeading}
+              alt="Your Journey — The Experience, Every appointment follows our refined five-step process"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </div>
         </motion.div>
 
         {/* Desktop: Horizontal Timeline */}
