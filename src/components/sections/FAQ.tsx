@@ -164,24 +164,20 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-24 md:py-32 lg:py-40 bg-warm-black">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-center mb-16 flex flex-col items-center"
+          className="text-center mb-16 md:mb-24 flex flex-col items-center"
         >
-          <div className="w-full max-w-[280px] md:max-w-[320px] mb-4">
+          <div className="w-[90vw] md:w-[1000px] max-w-full">
             <img
               src={faqHeading}
               alt="Common Questions"
               className="w-full h-auto object-contain mx-auto"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mt-4 uppercase tracking-tight">
-            Frequently Asked Questions
-          </h2>
         </motion.div>
 
         {/* FAQ Accordion */}
