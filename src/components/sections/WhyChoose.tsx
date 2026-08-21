@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Crosshair, Leaf, Gem, ShieldCheck, Palette, Heart } from 'lucide-react';
 import { staggerContainer, fadeUpVariant, viewportSettings } from '../../utils/animations';
+import whyChooseUsHeading from '../../assets/why-choose-us-heading.png';
 
 const features = [
   {
@@ -51,12 +52,15 @@ export default function WhyChoose() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportSettings}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center mb-16 lg:mb-20 flex flex-col items-center"
         >
-          <span className="section-label block mb-4">WHY CHOOSE US</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-warm-ivory mb-4">
-            The MLE Made Difference
-          </h2>
+          <div className="w-full max-w-[340px] md:max-w-[400px] mb-8">
+            <img
+              src={whyChooseUsHeading}
+              alt="Why Choose Us — The MLE Made Difference"
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </div>
           <p className="text-warm-ivory/50 font-sans max-w-xl mx-auto">
             What sets us apart is our unwavering commitment to artistry, safety,
             and an elevated client experience.
