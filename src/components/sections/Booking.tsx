@@ -89,7 +89,7 @@ export default function Booking() {
       />
 
       {/* Decorative Tools Doodle */}
-      <div className="hidden md:block absolute left-[8%] lg:left-[12%] top-1/2 -translate-y-1/2 w-28 lg:w-36 opacity-[0.18] pointer-events-none select-none">
+      <div className="hidden md:block absolute left-[8%] lg:left-[12%] top-1/2 -translate-y-1/2 w-28 lg:w-36 pointer-events-none select-none">
         <img
           src={doodleTools}
           alt="Decorative PMU tools sketch"
